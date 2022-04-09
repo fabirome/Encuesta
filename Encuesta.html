@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <title>Formulario de encuesta</title>
+      <meta charset="utf-8">
+  </head>
+  <body>
+      <h1 id="tittle">FORMULARIO DE ENCUESTA</h1>
+      <P id="description">Por favor llenar los siguientes datos: </P>
+      <form id="survey-form">
+          <p><label id="name-label" for="name">Nombre:</label><input  id="name" name="nombre" type="text" placeholder="Introduce tu nombre"/></p>
+          <p><label id="email-label" for="email">Correo electronico:</label><input  id="email" name="correo" type="email" placeholder="Introduce tu correo electronico" required /></p>
+          <p><label id="number-label" for="number">Numero:</label><input id="number" name="numero" type="number" min="2" max="100" placeholder="Introduce un numero" required/></p>
+
+          <p><label > Gustos:
+              <select id="dropown" name="gustos">
+              <option value="option 1">Musica</option>    
+              <option value="option 2">Comida</option>
+              <option value="option 3">Viajes</option>
+              <option value="option 4">Patinar</option>
+              </select>
+          </label>
+
+          <p>que te gusta mas:</p>
+          <label for="caminar">Caminar</label><input id="caminar" type="radio" name="gustos"/>
+          <label for="correr">Correr</label><input id="correr" type="radio" name="gustos"/>
+          <label for="trotar">Trotar</label><input id="trotar" type="radio" name="gustos"/>
+
+          <p>Selecciona tu deporte favorito</p>
+          <label for="football">football</label><input id="football" type="checkbox" name="deportes" value="football">
+          <label for="bascketball">bascketball</label><input id="bascketball" type="checkbox" name="deportes" value="bascketball">
+          <label for="baseball">baseball</label><input id="baseball" type="checkbox" name="deportes" value="baseball">
+          <label for="natacion">natacion</label><input id="natacion" type="checkbox" name="deportes" value="natacion">
+          
+          <p>Deja tus comentarios:</p>
+          <textarea name="mensaje"></textarea>
+
+          <p><button type="submit" id="submit">Enviar formulario</button></p>
+     </form>
+
+  </body>
+
+
+
+
+
+</html>
+    
+
